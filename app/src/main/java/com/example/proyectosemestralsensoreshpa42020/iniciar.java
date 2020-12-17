@@ -9,8 +9,6 @@ import android.view.View;
 import android.widget.Button;
 
 
-
-
 public class iniciar extends AppCompatActivity  {
 Button acelerometro, gps, temperatura, volver, salir;
 
