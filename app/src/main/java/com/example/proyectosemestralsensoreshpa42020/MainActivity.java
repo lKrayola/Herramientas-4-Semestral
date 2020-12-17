@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-Button presentación, salir;
+Button presentación, salir, iniciar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,16 @@ presentación.setOnClickListener(new View.OnClickListener() {
 
     }
 });
+
+iniciar= findViewById(R.id.iniciar);
+iniciar.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        startActivity(new Intent(MainActivity.this,iniciar.class));
+    }
+});
+
+
 salir=findViewById(R.id.salir);
 salir.setOnClickListener(new View.OnClickListener() {
     @Override
