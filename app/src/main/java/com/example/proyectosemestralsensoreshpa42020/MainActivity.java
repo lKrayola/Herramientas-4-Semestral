@@ -15,7 +15,7 @@ Button presentación, salir;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-presentación =findViewById(R.id.presentación);
+presentación =findViewById(R.id.present);
 presentación.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
@@ -35,6 +35,5 @@ salir.setOnClickListener(new View.OnClickListener() {
         startActivity(intent);
     }
 });
-
     }
 }
