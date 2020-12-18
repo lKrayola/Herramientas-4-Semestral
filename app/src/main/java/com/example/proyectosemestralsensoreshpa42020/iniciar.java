@@ -51,7 +51,7 @@ Button acelerometro, gps, temperatura, volver, salir;
 
             @Override
             public void onClick(View view) {                    //en vez de mainactivity poner el nombre del layout del gps
-                startActivity(new Intent(iniciar.this, MainActivity.class));
+                startActivity(new Intent(iniciar.this, GPS.class));
             }
         });
 

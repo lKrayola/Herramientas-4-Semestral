@@ -1,9 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
     tools:context=".GPS">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <fragment
+        android:id="@+id/google_map"
+        android:layout_width="match_parent"
+        android:layout_height="417dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <Button
+        android:id="@+id/boton1"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_redondeado_white"
+        android:text="Actualizar"
+        android:layout_marginTop="16dp"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/direccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Dirección:"
+        android:textColor="#7814A3"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:id="@+id/latitud"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Latitud:"
+            android:textColor="#7814A3"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="62dp" />
+
+        <TextView
+            android:id="@+id/longitud"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Longitud:"
+            android:layout_weight="1"
+            android:textColor="#7814A3"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="106dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:id="@+id/pais"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="País:"
+            android:textColor="#7814A3"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="62dp" />
+
+        <TextView
+            android:id="@+id/region"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Región"
+            android:layout_weight="1"
+            android:textColor="#7814A3"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="106dp" />
+    </LinearLayout>
+
+</LinearLayout>
