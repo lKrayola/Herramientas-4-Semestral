@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Senacelero"></activity>
+        <activity android:name=".Sentemperatura"></activity>
         <activity android:name=".iniciar" />
         <activity android:name=".Splashscreen" />
         <activity android:name=".Presentacion" />
