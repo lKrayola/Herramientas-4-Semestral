@@ -68,7 +68,7 @@
             android:layout_marginBottom="40dp"
             android:background="@drawable/btn_redondeado_white"
             android:elevation="15dp"
-            android:text="Temperatura"
+            android:text="Luz"
             android:textColor="#fff"
             android:textSize="16dp" />
 
