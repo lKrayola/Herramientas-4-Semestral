@@ -64,7 +64,7 @@ public class GPS extends FragmentActivity implements OnMapReadyCallback {
             public void onClick(View view) {
                 //permisos
                 if (ActivityCompat.checkSelfPermission(GPS.this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-                    //Cuando se obtiene el permiso
+                    //Cuando se obtiene el permiso Presentando COmmit
                     getLocation();
                 } else {
                     // Cuando no se obtiene el permiso
