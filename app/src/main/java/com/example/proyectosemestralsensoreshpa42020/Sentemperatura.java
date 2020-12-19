@@ -22,12 +22,12 @@ public class Sentemperatura extends AppCompatActivity implements SensorEventList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sentemperatura);
         mSensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
-        mTempSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_AMBIENT_TEMPERATURE);
+        mTempSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
     }
 
     public void Sentemperatura() {
         mSensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
-        mTempSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_AMBIENT_TEMPERATURE);
+        mTempSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
     }
 
     protected void onResume() {
@@ -49,6 +49,6 @@ public class Sentemperatura extends AppCompatActivity implements SensorEventList
         TextView tvTemp;
         tvTemp=findViewById(R.id.tvTemp);
 
-        tvTemp.setText(concat(String.valueOf(temp), " C"));
+        tvTemp.setText(concat(String.valueOf(temp), " Lumens"));
     }
 }
